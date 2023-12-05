@@ -1,0 +1,35 @@
+:root {
+    --background-color : #0d1117;
+    --font-color : #ffffff;
+    --me-border : #7b47c8;
+    --experience-color: #4eb3ae;
+    --skills-color : #ffbf00 ;
+    --hobbies-color : #ee78bb;
+}
+@font-face {
+    font-family: 'Mona Sans';
+    src: url('fonts/Mona\ Sans/Mona-Sans-woff2') format('woff2 supports variations'),
+         url('fonts/Mona\ Sans/Mona-Sans-woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+  }
+html {
+    font-family: 'Mona Sans';
+    color: var(--font-color);
+    background-color: var(--background-color);
+  }
+body{
+    
+}
+header {
+    display : flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}

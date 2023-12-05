@@ -1,0 +1,156 @@
+:root {
+    --background-color : #0d1117;
+    --font-color : #ffffff;
+    --me-border : #7b47c8;
+    --experience-color: #4eb3ae;
+    --skills-color : #ffbf00 ;
+    --hobbies-color : #ee78bb;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-family: 'Mona Sans';
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+nav {
+    background-color: #ee78bb;
+    padding: 5px 20px;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+a:hover {
+    text-decoration: underline;
+}
+.menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+}
+.menu li a {
+    display: block;
+}
+
+/* Mobile menu */
+.menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .toggle {
+    order: 1;
+  }
+  .item.button {
+    order: 2;
+  }
+  .item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+  }
+  .item.active {
+    display: block;
+  }
+  
+  /* Navbar Toggle */
+  .toggle {
+    cursor:pointer;
+  }
+  .bars {
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  .bars:before,
+  .bars:after {
+    background: #999;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  .bars:before {
+    top: 5px;
+  }
+  .bars:after {
+    top: -5px;
+  }
+  
+  /* Tablet menu */
+  @media all and (min-width: 468px) {
+    .menu {
+        justify-content: space-between;
+    }
+  
+    
+  
+    .item.button {
+        width: auto;
+        order: 0;
+        display: block;
+    }
+    .toggle {
+        order: 2;
+    }
+    .logo{
+        order: 1;
+    }
+    .button a {
+        padding: 7.5px 15px;
+        background: var(--me-border);
+        border: 1px #006d6d solid;
+        border-radius:50em;
+    }
+    .button.secondary a {
+        background: transparent;    
+    }
+    .button a:hover {
+        text-decoration: none;
+        transition:all .25s;
+    }
+    .button a:hover {
+        background: transparent;
+        border-color: var(--me-border);
+    }
+  }
+  
+  /* Desktop menu */
+  @media all and (min-width: 768px) {
+    .item {
+        display: block;
+        width: auto;
+    }
+    .toggle {
+        display: none;
+    }
+    .logo {
+        order: 0;
+        flex: 1;
+    }
+    .item {
+        order: 1;
+    }
+    .button {
+        order: 2;
+    }
+    .menu li {
+        padding: 15px 10px;
+    }
+    .menu li.button {
+        padding-right: 0;
+    }
+  }
