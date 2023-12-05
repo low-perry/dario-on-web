@@ -18,18 +18,3 @@ html {
     color: var(--font-color);
     background-color: var(--background-color);
   }
-body{
-    
-}
-header {
-    display : flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-}
-nav{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}

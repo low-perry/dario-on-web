@@ -41,7 +41,7 @@ a:hover {
 /* Mobile menu */
 .menu {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
